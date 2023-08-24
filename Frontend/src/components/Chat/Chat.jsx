@@ -21,7 +21,7 @@ const Chat = () => {
   const authData = useSelector(selectAuth);
 
   React.useEffect(() => {
-    socket.current = io('http://localhost:5555');
+    socket.current = io(process.env.REACT_APP_SOCKET_URL);
   }, []);
 
   React.useEffect(() => {

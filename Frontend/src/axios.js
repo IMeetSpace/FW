@@ -1,8 +1,7 @@
 import axios from 'axios';
 
 const instance = axios.create({
-  // baseURL: 'http://localhost:4444',
-  baseURL: 'https://freework-backend.onrender.com',
+  baseURL: process.env.REACT_APP_BASE_URL,
 });
 
 instance.interceptors.request.use((config) => {

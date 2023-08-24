@@ -5,6 +5,9 @@ import { validationResult } from 'express-validator';
 import UserModel from '../models/User.js';
 import RoleModel from '../models/Role.js';
 
+import dotenv from 'dotenv';
+dotenv.config();
+
 export const register = async (req, res) => {
   try {
     const salt = await bcrypt.genSalt(10);
@@ -27,7 +30,7 @@ export const register = async (req, res) => {
       {
         _id: user._id,
       },
-      'hash1234',
+      process.env.JWT_SECRET,
       {
         expiresIn: '30d',
       },
@@ -70,7 +73,7 @@ export const login = async (req, res) => {
       {
         _id: user._id,
       },
-      'hash1234',
+      process.env.JWT_SECRET,
       {
         expiresIn: '30d',
       },
