@@ -28,7 +28,7 @@ const Chat = () => {
     if (isLoading) return;
     socket.current.emit('addUser', authData._id);
     socket.current.on('getUsers', (users) => {
-      console.log('online:', users); // online users
+      // console.log('online:', users); // online users
     });
   }, [isLoading, id, authData]);
 
