@@ -1,0 +1,173 @@
+@import './../../scss/colors.scss';
+
+.full-order {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+
+
+    .content {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+
+
+        .author-block,
+        .order-block,
+        .tender-block {
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+
+            padding: 24px;
+
+            background: #fff;
+            border-radius: 4px;
+        }
+
+        .author-block {
+            display: flex;
+            flex-direction: row;
+            gap: 16px;
+
+            align-items: center;
+
+
+            .avatar {
+                width: 60px;
+                height: 60px;
+
+                text-align: center;
+
+                background: $secondary;
+                border-radius: 4px;
+
+                font-size: 32px;
+                line-height: 60px;
+                font-weight: 600;
+                color: #fff;
+            }
+
+            .author-meta {
+                display: flex;
+                flex-direction: column;
+                gap: 4px;
+
+                .author-name {
+                    font-weight: 700;
+                }
+            }
+        }
+
+        .order-block {
+            .order-header {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+
+                font-size: 20px;
+                line-height: 28px;
+                font-weight: 600;
+                color: $secondary;
+            }
+
+            .order-description {
+                word-wrap: break-word;
+                word-break: break-all;
+            }
+
+            .order-footer {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+
+                align-items: center;
+
+                color: $font-secondary;
+
+                font-size: 13px;
+                line-height: 16px;
+
+
+                .order-meta {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 4px;
+                }
+
+                .primary-button {
+                    display: flex;
+                    height: 30px;
+                }
+            }
+        }
+
+        .tender-block {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+
+            font-size: 16px;
+            line-height: 20px;
+            font-weight: 600;
+
+
+            .tender-description {
+                display: flex;
+                flex-direction: column;
+                word-wrap: break-word;
+                word-break: break-all;
+
+
+                textarea {
+                    margin: 8px 0;
+
+                    height: 140px;
+                    word-wrap: normal;
+                    resize: none;
+
+                    overflow: hidden;
+                    overflow-y: auto;
+                }
+
+                .hint {
+                    margin-left: auto;
+
+                    color: $font-secondary;
+
+                    font-size: 13px;
+                    line-height: 16px;
+                    font-weight: 400;
+                }
+            }
+
+            .tender-meta {
+                display: flex;
+                flex-direction: row;
+                gap: 48px;
+
+
+
+                .meta-item {
+                    display: flex;
+                    flex-direction: row;
+                    gap: 12px;
+
+                    align-items: center;
+
+
+                    input {
+                        width: auto;
+                    }
+                }
+
+                .primary-button {
+                    display: flex;
+                    height: 30px;
+
+                    margin-left: auto;
+                }
+            }
+        }
+    }
+}

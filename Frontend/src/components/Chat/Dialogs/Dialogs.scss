@@ -1,0 +1,68 @@
+@import './../../../scss/colors.scss';
+
+.dialogs {
+    display: flex;
+    flex-direction: column;
+
+    width: 30%;
+    height: 100%;
+
+    background: #fff;
+
+    border-radius: 4px;
+
+
+    .search {
+        padding: 24px;
+        border-bottom: $bg-primary 3px solid;
+    }
+
+    .dialogs-list {
+        .dialog-item {
+            display: flex;
+            flex-direction: row;
+            gap: 12px;
+
+            padding: 12px 24px;
+
+            border-radius: 4px;
+
+            cursor: pointer;
+
+            transition: .3s;
+
+
+            &:hover {
+                background: rgba($primary, 0.1);
+                transition: .3s;
+            }
+
+            .image {
+                width: 40px;
+                height: 40px;
+
+                text-align: center;
+
+                background: $secondary;
+                border-radius: 40px;
+
+                font-size: 20px;
+                line-height: 40px;
+                font-weight: 600;
+                color: #fff;
+            }
+
+
+            .content {
+                .header {
+                    font-weight: 700;
+                }
+
+                .last-message {
+                    display: flex;
+                    flex-direction: column;
+                }
+            }
+        }
+    }
+}

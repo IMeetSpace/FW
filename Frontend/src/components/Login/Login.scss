@@ -1,0 +1,40 @@
+@import './../../scss/colors.scss';
+
+.login {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+
+    width: 40%;
+    min-width: 350px;
+
+    margin: 20px auto 0 auto;
+    padding: 40px;
+
+    background: #fff;
+    border-radius: 4px;
+
+
+    .title {
+        margin: 0;
+        text-align: center;
+    }
+
+    .content form {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+
+
+        input {
+            height: 40px;
+            padding: 4px 10px;
+            font-size: 16px;
+        }
+
+        .primary-button {
+            height: 50px;
+            margin-top: 12px;
+        }
+    }
+}

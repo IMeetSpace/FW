@@ -1,0 +1,57 @@
+@import './../../../scss/colors.scss';
+
+.filters {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+
+    width: 30%;
+    height: fit-content;
+
+    padding: 24px;
+
+    background: #fff;
+
+    border-radius: 4px;
+
+
+    .filter-item {
+        display: flex;
+        flex-direction: column;
+        gap: 4px;
+
+
+        .filter-title {
+            font-size: 16px;
+            line-height: 24px;
+            font-weight: 700;
+        }
+
+
+        .filter-body {
+            display: flex;
+            flex-direction: column;
+            gap: 4px;
+
+
+            .category-item {
+                font-size: 14px;
+                line-height: 20px;
+
+
+                &:hover {
+                    color: $primary;
+                    stroke: $primary;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+
+
+    .budget>.filter-body {
+        display: flex;
+        flex-direction: row;
+        gap: 12px;
+    }
+}

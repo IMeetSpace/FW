@@ -1,0 +1,46 @@
+@import './../../scss/colors.scss';
+
+.navbar {
+    padding: 0 24px;
+    border-bottom: $font-thirdly solid 1px;
+
+
+    .container {
+        display: flex;
+        flex-direction: row;
+
+        width: 100%;
+        max-width: 1200px;
+        height: 50px;
+        margin: 0 auto;
+
+        align-items: center;
+
+        text-shadow: 0 0 0 #909090;
+
+
+        .logo {
+            color: $primary;
+            font-family: 'Fjalla One', sans-serif;
+            font-size: 24px;
+            font-weight: 400;
+            margin-right: 32px;
+        }
+
+        .nav-menu {
+            height: auto;
+            display: flex;
+            flex-direction: row;
+            gap: 32px;
+
+            li:hover {
+                color: $primary;
+                stroke: $primary;
+            }
+        }
+
+        .self {
+            margin-left: auto;
+        }
+    }
+}

@@ -1,0 +1,28 @@
+@import './../../../scss/colors.scss';
+
+.my-tenders {
+    .list {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+
+        width: 100%;
+    }
+
+    .empty {
+        margin: auto;
+        align-items: center;
+
+
+        h2,
+        h3 {
+            margin: 0;
+        }
+
+        a {
+            color: $primary;
+            font-weight: 700;
+            text-decoration: underline;
+        }
+    }
+}

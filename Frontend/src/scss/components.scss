@@ -1,0 +1,51 @@
+@import '../scss/colors.scss';
+
+[hidden] {
+    display: none !important;
+}
+
+.primary-button {
+    height: 40px;
+
+    padding: 0 24px;
+
+    border: none;
+    border-radius: 4px;
+    background: $secondary;
+
+    vertical-align: middle;
+    text-align: center;
+    color: #fff;
+
+    font-size: 14px;
+    font-weight: 600;
+
+    cursor: pointer;
+
+    span {
+        margin: auto 0;
+    }
+}
+
+.Создан {
+    display: none !important;
+}
+
+.Назначен {
+    width: fit-content;
+    color: $primary;
+    border-bottom: $primary 1px solid;
+}
+
+.Выполнен {
+    width: fit-content;
+    color: $green;
+    border-bottom: $green 1px solid;
+}
+
+.Удален,
+.Истек {
+    width: fit-content;
+    color: $red;
+    border-bottom: $red 1px solid;
+}

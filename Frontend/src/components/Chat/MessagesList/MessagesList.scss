@@ -1,0 +1,137 @@
+@import './../../../scss/colors.scss';
+
+.chat {
+    .list {
+        display: flex;
+        flex-direction: column;
+
+        width: 100%;
+
+        background: #fff;
+
+        border-radius: 4px;
+
+
+        .header {
+            display: flex;
+            flex-direction: row;
+            gap: 12px;
+
+
+            padding: 19px 24px;
+
+            border-bottom: $bg-primary 3px solid;
+
+
+            .image {
+                width: 40px;
+                height: 40px;
+
+                text-align: center;
+
+                background: $secondary;
+                border-radius: 40px;
+
+                font-size: 20px;
+                line-height: 40px;
+                font-weight: 600;
+                color: #fff;
+            }
+
+            .content {
+                display: flex;
+                flex-direction: column;
+
+
+                .nickname {
+                    font-weight: 700;
+                }
+
+                .last-online {
+                    display: flex;
+                    flex-direction: column;
+                }
+            }
+        }
+
+        .messages-list {
+            display: flex;
+            flex-direction: column;
+            gap: 24px;
+
+            padding: 24px;
+            height: 100%;
+            max-height: 599px;
+
+            overflow-y: scroll;
+
+            &::-webkit-scrollbar {
+                width: 0;
+            }
+        }
+
+        .new-message {
+            display: flex;
+            flex-direction: row;
+            gap: 8px;
+            align-items: center;
+            padding: 7px 24px;
+            border-top: $bg-primary 3px solid;
+
+
+            .add-file {
+                fill: $font-secondary;
+                cursor: pointer;
+                transition: .3s;
+
+                &:hover {
+                    fill: $primary;
+                    transition: .3s;
+                }
+            }
+
+            .text {
+                height: 30px;
+                max-height: 150px;
+                font-size: 14px;
+                border: none;
+
+                word-wrap: normal;
+                resize: none;
+
+                overflow: hidden;
+                overflow-y: auto;
+            }
+
+            .send-message {
+                margin-right: 3px;
+                stroke: $font-secondary;
+                transition: .3s;
+
+                &.valid {
+                    fill: $primary;
+                    stroke: $primary;
+                    transition: .3s;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+
+    .empty {
+        align-items: center;
+        text-align: center;
+
+
+        h2,
+        h3 {
+            margin: auto 0;
+        }
+
+        a {
+            color: $primary;
+            font-weight: 700;
+            text-decoration: underline;
+        }
+    }
+}

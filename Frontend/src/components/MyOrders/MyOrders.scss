@@ -1,0 +1,27 @@
+@import './../../scss/colors.scss';
+
+.my-orders {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+
+
+    .title {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+
+
+        .primary-button {
+            height: 30px;
+
+        }
+    }
+
+    .content {
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+    }
+}

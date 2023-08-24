@@ -1,0 +1,53 @@
+@import './scss/colors.scss';
+
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html,
+body {
+  display: flex;
+  flex-direction: column;
+
+  height: 100%;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+
+  background: $bg-primary;
+
+  color: $font-primary;
+  font-family: 'Open sans', sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 400;
+
+
+  .page-content {    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    height: auto;
+    min-height: calc(100vh - 51px);
+
+
+    .container {
+      display: flex;
+      flex-direction: column;
+      padding: 40px 0;
+
+      max-width: 1200px;
+      height: 100%;
+      width: 100%;
+      // margin: 0 auto;
+    }
+  }
+}

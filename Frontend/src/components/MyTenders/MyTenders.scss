@@ -1,0 +1,21 @@
+@import './../../scss/colors.scss';
+
+.my-tenders {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    
+
+    .title{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .content {
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+    }
+}

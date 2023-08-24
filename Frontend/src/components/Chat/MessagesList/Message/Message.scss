@@ -1,0 +1,53 @@
+@import './../../../../scss/colors.scss';
+
+.message {
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+
+
+    .image {
+        width: 40px;
+        height: 40px;
+
+        text-align: center;
+
+        background: $secondary;
+        border-radius: 40px;
+
+        font-size: 20px;
+        line-height: 40px;
+        font-weight: 600;
+        color: #fff;
+    }
+
+    .main {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+
+
+        .message-header {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+
+
+            .nickname{
+                font-weight: 700;
+            }
+
+            .date {
+                color: $font-secondary;
+
+                font-size: 13px;
+                line-height: 16px;
+            }
+        }
+
+        .content {
+            word-wrap: break-word;
+            word-break: break-all;
+        }
+    }
+}

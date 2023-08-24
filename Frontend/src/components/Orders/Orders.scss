@@ -1,0 +1,14 @@
+@import './../../scss/colors.scss';
+
+.orders {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+
+
+    .content {
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+    }
+}
